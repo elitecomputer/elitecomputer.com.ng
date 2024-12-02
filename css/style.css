@@ -928,3 +928,103 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+/* Form Container */
+#registration-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #registration-form {
+      width: 95%;
+      padding: 15px;
+  }
+
+  form input, form textarea, form button {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  #registration-form h2 {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #registration-form {
+      width: 100%;
+      padding: 10px;
+  }
+
+  form input, form textarea, form button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  #registration-form h2 {
+      font-size: 1.3rem;
+  }
+
+  form label {
+      font-size: 14px;
+  }
+}
